@@ -25,7 +25,13 @@
 
 ### 修改默认帐号
 
-安装成功后，默认的端口是 `5333`，使用 `aes-256-cfb` 加密，默认密码是 `ilovelex`。
+记得要记下服务器的 IP 地址，没有记下也可以事后去 [DigitalOcean] 上查看。
+
+安装成功后的默认配置是这样:
+
+- 端口: `5333`
+- 加密: `aes-256-cfb`
+- 密码: `ilovelex`
 
 如果想改的话，用 ssh 登录这台服务器，修改 `/etc/ss-server/config-default.json` 后，`supervisorctl restart ss-server-default` 重启 [Shadowsocks] 服务。
 
