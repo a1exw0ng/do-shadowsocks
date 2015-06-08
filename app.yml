@@ -8,4 +8,4 @@ config:
     - git
     - ansible
   runcmd:
-    - mkdir -p /opt/ && git clone https://github.com/lexrus/vpn-deploy-playbook.git /opt/vdp && cd /opt/vdp && ansible-playbook proxy-backend.yml -i ansible_hosts.local -e "shadowsocks_provider=python shadowsocks_change_tcp_congestion_control=true enable_udp=false port=5333 password=ilovelex method=aes-256-cfb"
+    - mkdir -p /opt/ && git clone https://github.com/lexrus/vpn-deploy-playbook.git /opt/vdp && cd /opt/vdp && ansible-playbook proxy-backend.yml -i ansible_hosts.local -e "shadowsocks_change_tcp_congestion_control=true port=5333 password=ilovelex method=aes-256-cfb"
