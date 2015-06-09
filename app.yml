@@ -8,4 +8,4 @@ config:
     - git
     - ansible
   runcmd:
-    - mkdir -p /opt/ && git clone https://github.com/lexrus/ios-dev-playbook.git /opt/idp && cd /opt/idp && ansible-playbook 022_shadowsocks.yml -i ansible_localhost.ini -e "port=5333 password=ilovelex method=aes-256-cfb" --skip-tags="hostname build-essential editor git mosh ranger imagemagick exim4"
+    - mkdir -p /opt/ && git clone https://github.com/lexrus/ios-dev-playbook.git /opt/idp && cd /opt/idp && ansible-playbook 022_shadowsocks.yml -i ansible_localhost.ini -e "port=5333 password=ilovelex method=aes-256-cfb" --skip-tags="hostname,build-essential,editor,git,mosh,ranger,imagemagick,exim4"
