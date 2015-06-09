@@ -8,4 +8,4 @@ config:
     - git
     - ansible
   runcmd:
-    - mkdir -p /opt/ && git clone https://github.com/lexrus/vpn-deploy-playbook.git /opt/vdp && cd /opt/vdp && ansible-playbook proxy-backend.yml -i ansible_hosts.local -e "shadowsocks_change_tcp_congestion_control=true port=5333 password=ilovelex method=aes-256-cfb"
+    - mkdir -p /opt/ && git clone https://github.com/lexrus/ios-dev-playbook.git /opt/idp && cd /opt/idp && ansible-playbook 022_shadowsocks.yml -i ansible_localhost.ini -e "port=5333 password=ilovelex method=aes-256-cfb" --skip-tags="hostname build-essential editor git mosh ranger imagemagick exim4"

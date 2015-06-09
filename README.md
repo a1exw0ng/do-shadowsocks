@@ -2,7 +2,7 @@
 
 [![Install on DigitalOcean](http://installer.71m.us/button.svg)][InstallLink]
 
-> 这是一个 [do-install-button](https://github.com/seven1m/do-install-button) 配置，能使用 [DigitalOcean] 快速部署 [Shadowsocks] 服务器。配置脚本基于 [vpn-deploy-playbook](https://github.com/lexrus/vpn-deploy-playbook) 实现。虽然用的时候完全不需要知道它们是啥，但是万一遇到问题可以让男朋友传送过去研究一下帮你解决。
+> 这是一个 [do-install-button](https://github.com/seven1m/do-install-button) 配置，能使用 [DigitalOcean] 快速部署 [Shadowsocks] 服务器。配置脚本基于 [ios-dev-playbook](https://github.com/lexrus/ios-dev-playbook) 实现。虽然用的时候完全不需要知道它们是啥，但是万一遇到问题可以让男朋友传送过去研究一下帮你解决。
 
 [InstallLink]: http://installer.71m.us/install?url=https://github.com/lexrus/do-shadowsocks
 [Shadowsocks]: https://github.com/clowwindy/shadowsocks
@@ -33,12 +33,11 @@
 - 加密: `aes-256-cfb`
 - 密码: `ilovelex`
 
-如果想改的话，用 ssh 登录这台服务器，修改 `/etc/ss-server/config-default.json` 后，`supervisorctl restart ss-server-default` 重启 [Shadowsocks] 服务。
+如果想改的话，用 ssh 登录这台服务器，修改 `/opt/ss-server/config-default.json` 后，`supervisorctl restart ss-server-default` 重启 [Shadowsocks] 服务。
 
 ### 赞助
 
 欢迎请我喝咖啡，我的支付宝帐号是: `lexrus@gmail.com`。
-我的微信收款二维码是：
 
 ### 相关链接
 
